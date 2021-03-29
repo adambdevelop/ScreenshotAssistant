@@ -23,7 +23,8 @@
         <com.theartofdev.edmodo.cropper.CropImageView
             android:id="@+id/cropView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            app:cropTouchRadius="64dp" /> <!-- default 48dp -->
 
         <de.beatbrot.imagepainter.view.ImagePainterView
             android:id="@+id/imagePainter"
