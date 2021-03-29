@@ -9,7 +9,7 @@ import de.beatbrot.screenshotassistant.util.liveDataOf
 class DrawSettingsViewModel : ViewModel() {
     val editingMode = liveDataOf(DrawMode.PEN)
 
-    val penColor = liveDataOf(Color.BLACK)
+    val penColor = liveDataOf(Color.RED)
     val markerColor = liveDataOf(-0x14C5) // Yellow
 
     val strokeColor = MediatorLiveData<Int>().apply {
@@ -49,8 +49,8 @@ class DrawSettingsViewModel : ViewModel() {
     val strokeWidth = MediatorLiveData<Float>().apply {
         addSource(editingMode) { newMode ->
             value = when (newMode) {
-                DrawMode.PEN -> 3F
-                DrawMode.MARKER -> 30F
+                DrawMode.PEN -> 5F
+                DrawMode.MARKER -> 40F
                 else -> value
             }
         }

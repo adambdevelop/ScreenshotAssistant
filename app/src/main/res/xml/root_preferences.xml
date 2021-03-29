@@ -18,7 +18,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <SeekBarPreference
-        android:defaultValue="100"
+        android:defaultValue="90"
         android:icon="@drawable/ic_grade_unfocused_24dp"
         android:key="image_quality"
         android:max="100"

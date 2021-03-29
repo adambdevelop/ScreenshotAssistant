@@ -1,7 +1,7 @@
 <resources>
     <string-array name="image_formats">
-        <item>JPEG</item>
         <item>PNG</item>
+        <item>JPEG</item>
         <item>WEBP</item>
     </string-array>
 </resources>

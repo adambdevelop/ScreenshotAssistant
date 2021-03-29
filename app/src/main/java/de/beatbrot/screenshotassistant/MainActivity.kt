@@ -137,14 +137,12 @@ class MainActivity : AppCompatActivity() {
         imageView.apply {
             scaleX = startValue
             scaleY = startValue
-            alpha = 0.5F
 
             visibility = View.VISIBLE
 
             animate()
                 .scaleX(1F)
                 .scaleY(1F)
-                .alpha(1F)
                 .setInterpolator(OvershootInterpolator())
                 .start()
         }
